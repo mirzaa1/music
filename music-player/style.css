@@ -1,0 +1,175 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  background: #f9f9f9;
+  color: #333;
+}
+/* Sidebar */
+.sidebar {
+  width: 350px;
+  background: #ffb295;
+  padding: 35px;
+  height: 1000px;
+  
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box i {
+  position: absolute;
+  top: 33%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 14px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* kasih padding kiri lebih besar supaya tidak menimpa ikon */
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.6); /* transparan */
+  color: #333;
+}
+
+.sidebar h3 {
+  margin: 15px 0 5px;
+  font-size:20px;
+  color: #fff;
+   margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 8px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+}
+
+
+.rufus-section {
+  padding: 40px 60px;
+  margin: 0%;
+  background: #f0d0d0;
+  width: 100%;
+  height: 100%;
+  align-items: center;   /* ini bikin sejajar secara vertikal */
+  justify-content: space-between; /* kiri-kanan ada jarak */
+}
+
+/* Back Link */
+.back-link {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #d37c6d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #b85f50;
+}
+
+/* Title */
+.rufus-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.rufus-section .desc {
+  font-size: 14px;
+  color: #666;
+  max-width: 550px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* Tags */
+.tags {
+  margin-bottom: 20px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #f2f2f2;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-right: 10px;
+  color: #444;
+}
+
+/* Time */
+.time {
+  display: flex;
+  justify-content: space-between;
+  min-width: 70px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* RIGHT IMAGE */
+.rufus-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rufus-image img {
+  max-width: 400px;
+  border-radius: 12px;
+
+}
+
+.audio-player {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#play-btn {
+  background: #ff6b6b;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+#play-btn:hover {
+  background: #ff4c4c;
+}
